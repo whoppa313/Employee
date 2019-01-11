@@ -1,29 +1,35 @@
 package Java_Lexicon.Exercise_empoyment;
 
 import Employee_Developer.SystemDeveloper;
+import Employee_Sales.SalesPerson;
 
 public class App 
 {
     public static void main( String[] args )
     {
-        SystemDeveloper victor = new SystemDeveloper("Victor", "Holmquist", 0, 1, 2);
-    
-     
-                                      
+    	// the first double should stay ZERO since it will not change even if you alter it to anything else then ZERO.
+    	// the second Double will set the number of languages the Developer knows.
+    	// the third Double will set the number off Certificates the Developer has.
+    	
+    	boolean show = true;
+    	
+        SystemDeveloper sysDev = new SystemDeveloper("krister", "Lindblom", 0, 3, 2);
         
-        if (victor.getNumbOfLang() == 1)
+        SalesPerson salesMan = new SalesPerson("Sten", "Ljung", 0, 4, 2);
+     
+       
+        
+        if (show = true)
         {
-        	victor.setSalary(26000);
-        	if(victor.getNumbOfCertificates() > 0)
-        	{
-        		victor.setSalary(26000 + 500 * victor.getNumbOfCertificates());
-        	}
+        	sysDev.setSalary(25000 + 1500 * sysDev.getNumbOfLang() + 1000 * sysDev.getNumbOfCertificates());
+        	salesMan.setSalary(25000 + 1000 * salesMan.getClientNew() + 500 * salesMan.getClientMaintain());
         }
         
         
-        
-        
-        System.out.println(victor);
+         System.out.println(sysDev);
+         System.out.println("\n");
+         System.out.println(salesMan);
+         
     }
     
     

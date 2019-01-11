@@ -15,7 +15,7 @@ public class SystemDeveloper extends Employee
 	public String toString()
 	{
 		
-		return "Namn " + firstName + " " + lastName + "\nNumber of know Languages: " + numbOfLang + "\nAnd Certificates: " + " " + numbOfCertificates + "\nYour salary would be: " + salary ; 
+		return "Name: " + "\n" + firstName + " " + lastName+ "\n" + "\nNumber of know Languages: " + numbOfLang +"\nYou will earn an extra 1500kr for each." +"\n" + "\nAnd Certificates: " + numbOfCertificates + "\nYou will earn an extra 1000kr for each." + "\n" + "\nYour salary would be: " + salary +"kr" ; 
 	}
 	public int getNumbOfLang() {
 		return numbOfLang;

@@ -1,18 +1,20 @@
-package Employee_Developer;
+package Employee_Sales;
 
-public class Employee
+
+
+public class Employe 
 {
 
 	protected String firstName;
 	protected String lastName;
-	public static double salary;
+	protected static double salary;
 	
 	
-	public Employee(String firstName, String lastName, double salary)
+	public Employe(String firstName, String lastName, double salary)
 	{
 		this.firstName = firstName;
 		this.lastName = lastName;
-		Employee.salary = 25000;
+		Employe.salary = 25000;
 
 	}
 
@@ -41,14 +43,6 @@ public class Employee
 	}
 
 	public void setSalary(double salary) {
-		Employee.salary = salary;
+		Employe.salary = salary;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 }
